@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <!-- Botões para mudar a cor fundo -->
+        <button onclick="alterarCor('blue')">Blue</button>
+        <button onclick="alterarCor('black')">Black</button>
+        <button onclick="alterarCor('purple')">Purple</button>
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        <!-- Criar paragrafo -->
+        <button onclick="paragrafoLorem()" id="button">Criar paragrafo Lorem</button>
+        <p id="lorem"></p>
+        <br>
+    </div>
+
+    <div>
+        <!-- Aumentar e diminuir texto -->
+        <button onclick="aumentarTexto()" id="aumentar">Aumentar texto</button>
+        <button onclick="diminuirTexto()" id="diminuir">Diminuir texto</button>
+    </div>
+
+
+    <script>
+
+        // Alterar cor com os botões
+        function alterarCor(cor) {
+            document.body.style.background = cor;
+        }
+
+        // Aparecer paragrafo depois de clicar no botão
+        function paragrafoLorem() {
+            lorem = document.querySelector('#lorem')
+            button = document.getElementById('button')
+
+
+            if (lorem.textContent.length == 0) {
+                lorem.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aut fugiat illo ipsa minima officia dolores voluptatibus! Accusamus sint corporis nemo quisquam, impedit quam fugit quaerat ratione quod aliquam recusandae?"
+                button.textContent = "Apagar paragrafo"
+            } else {
+                lorem.innerHTML = ""
+                lorem.style.fontSize = "";
+                lorem.style.textAlign = "";
+                button.textContent = "Criar paragrafo Lorem"
+            }
+        }
+
+
+
+        function diminuirTexto() {
+            if (lorem.textContent.length > 0) {
+                lorem.style.fontSize = "10px";
+                lorem.style.textAlign = "right";
+            }
+        }
+
+        function aumentarTexto() {
+            if (lorem.textContent.length > 0) {
+                lorem.style.fontSize = "40px";
+                lorem.style.textAlign = "center";
+            }
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

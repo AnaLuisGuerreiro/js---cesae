@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body></body>
+
+<script>
+  let name = "Ana";
+  let surname = "Guerreiro";
+  let age = 27;
+  let email = "analuisguerreiro@hotmail.com";
+
+  console.log("Name: " + name.toUpperCase() + " " + name.length);
+  console.log("Surname: " + surname.toLowerCase() + " " + surname.length);
+  console.log("Age: " + age);
+  console.log("Email: " + email);
+
+  document.write(
+    "<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora excepturi officiis vero quos quam consequatur a facilis omnis itaque? </p>"
+  );
+
+  // ##############################################################
+
+  let n1 = 2;
+  let n2 = 10;
+
+  console.log(n1 + n2);
+  console.log(n1 - n2);
+  console.log(n1 / n2);
+  console.log(n1 * n2);
+
+  let numero = Math.ceil(Math.random() * 10);
+
+  console.log(numero);
+
+  // ############################################
+
+  let number = 27;
+
+  if (number > 37.5) {
+    console.log("Tem febre");
+  } else if (number < 35) {
+    console.log("Temperatura muito baixa.");
+  } else {
+    console.log("Saudável.");
+  }
+
+  // #################################################
+
+  // var idd = prompt("Enter your age: ");
+  // var gender = prompt("Enter your gender M/F : ");
+
+  if (idd < 25) {
+    if (gender === "f" || gender === "F") {
+      console.log("A jovem");
+    } else if (gender === "m" || gender === "M") {
+      console.log("O jovem");
+    } else {
+      console.log("Erro!");
+    }
+  } else {
+    if (gender === "f" || gender === "F") {
+      console.log("A Mulher");
+    } else if (gender === "m" || gender === "M") {
+      console.log("O Homem");
+    } else {
+      console.log("Erro!");
+    }
+  }
+
+
+  // Exercicio 14
+  // var numero1 = prompt("Insere um numero de 1-5: ");
+
+  if (numero1 == 1) {
+    console.log("Um");
+  } else if (numero1 == 2) {
+    console.log("Dois");
+  } else if (numero1 == 3) {
+    console.log("Três");
+  } else if (numero1 == 4) {
+    console.log("Quatro");
+  } else if (numero1 == 5) {
+    console.log("Cinco");
+  } else {
+    console.log("Erro. Digite novamente.");
+  }
+
+  // Exercicio 15
+
+  var numero2 = prompt("Insere um numero de 1-5: ");
+
+  switch (numero2 > 0) {
+    case numero2 == 1:
+      console.log("Um");
+      break;
+
+    case numero2 == 2:
+      console.log("Dois");
+      break;
+
+    case numero2 == 3:
+      console.log("Três");
+      break;
+
+    case numero2 == 4:
+      console.log("Quatro");
+      break;
+
+    case numero2 == 5:
+      console.log("Cinco");
+      break;
+
+    default:
+      console.log("Erro.");
+  }
+
+  // Exercicio 16
+  var valor = 1;
+
+  while (valor < 1001) {
+    console.log(valor);
+    valor++;
+  }
+
+  // Exercício 17
+  for (var i = 1; i < 1000; i++) {
+    console.log(valor);
+  }
+
+  // Exercicio 19
+
+
+
+</script>
+
+</html>
